@@ -1,0 +1,692 @@
+{
+  "qwen2.5:0.5b": {
+    "无依据断言：reason 不含任何数值": [
+      {
+        "id": "gsm8k-test-63",
+        "evidence": "reason 'not numerically equal'，无数值"
+      },
+      {
+        "id": "gsm8k-test-299",
+        "evidence": "reason 'not numerically equal'，无数值"
+      },
+      {
+        "id": "gsm8k-test-321",
+        "evidence": "reason 'not numerically equal'，无数值"
+      },
+      {
+        "id": "gsm8k-test-343",
+        "evidence": "reason 'not numerically equal'，无数值"
+      },
+      {
+        "id": "gsm8k-test-551",
+        "evidence": "reason 'incorrect because it does not account for the change'"
+      }
+    ],
+    "结论式否定：给了 pred 数值但没给比较依据": [
+      {
+        "id": "gsm8k-test-132",
+        "evidence": "reason '60 ... not numerically equal'，未提金标值"
+      },
+      {
+        "id": "gsm8k-test-241",
+        "evidence": "reason '6 ... not equal'，未提金标值"
+      },
+      {
+        "id": "gsm8k-test-503",
+        "evidence": "reason '18 ... not equal'，未提金标值"
+      },
+      {
+        "id": "gsm8k-test-1307",
+        "evidence": "reason '8 ... not equal'，未提金标值"
+      }
+    ],
+    "误判为对：把模型答案/中间量当成正确答案": [
+      {
+        "id": "gsm8k-test-159",
+        "evidence": "pred=7 而 gold=15，reason 称 '7 is the correct number'"
+      },
+      {
+        "id": "gsm8k-test-297",
+        "evidence": "pred=25 而 gold=55，reason 把'少 25 箱'当作题目所求"
+      },
+      {
+        "id": "gsm8k-test-338",
+        "evidence": "pred=63.33 而 gold=60，reason 反而把 60 当模型答案"
+      },
+      {
+        "id": "gsm8k-test-1201",
+        "evidence": "pred=44 而 gold=42，reason 解释 44 后放行"
+      }
+    ],
+    "reason 自相矛盾：明说数值相同仍判 0": [
+      {
+        "id": "gsm8k-test-167",
+        "evidence": "reason 写 '16 ... reference answer of 16'，却判 0"
+      },
+      {
+        "id": "gsm8k-test-178",
+        "evidence": "reason 写 '122 ... of 122'，却判 0"
+      },
+      {
+        "id": "gsm8k-test-232",
+        "evidence": "reason 写 '75 ... of 75'，却判 0"
+      },
+      {
+        "id": "gsm8k-test-268",
+        "evidence": "reason 写 '1375 ... which is the same'，却判 0"
+      },
+      {
+        "id": "gsm8k-test-361",
+        "evidence": "reason 写 '20 ... reference 20, which is incorrect'"
+      },
+      {
+        "id": "gsm8k-test-390",
+        "evidence": "reason 复述正确答案 12 inches 却判错"
+      },
+      {
+        "id": "gsm8k-test-396",
+        "evidence": "reason 写 '3 ... which is the same'，却判 0"
+      },
+      {
+        "id": "gsm8k-test-514",
+        "evidence": "reason 写 '90000 ... 90000, which is the same'"
+      },
+      {
+        "id": "gsm8k-test-880",
+        "evidence": "reason 写 '10 ... reference 10, not numerically equal'"
+      },
+      {
+        "id": "gsm8k-test-1253",
+        "evidence": "reason 写 '120 ... of 120'，却判 0"
+      },
+      {
+        "id": "gsm8k-test-1289",
+        "evidence": "reason 写 '101 ... of 101'，却判 0"
+      }
+    ],
+    "引用错误金标：reason 里的参考值与真实 gold 不符": [
+      {
+        "id": "gsm8k-test-941",
+        "evidence": "reason 称 gold=900，实际 gold=842"
+      },
+      {
+        "id": "gsm8k-test-1225",
+        "evidence": "reason 称 gold=5，实际 gold=3"
+      }
+    ]
+  },
+  "qwen2.5:1.5b": {
+    "假阳性：数值明显不等却称 match": [
+      {
+        "id": "gsm8k-test-316",
+        "evidence": "56 与 156 不等，reason 称 matches"
+      },
+      {
+        "id": "gsm8k-test-722",
+        "evidence": "645 与 255 不等，reason 称 matches"
+      },
+      {
+        "id": "gsm8k-test-997",
+        "evidence": "6200 与 6 不等，reason 称 matches"
+      },
+      {
+        "id": "gsm8k-test-1201",
+        "evidence": "44 与 42 不等，reason 称 matches"
+      }
+    ],
+    "假阴性：自行改写数值后判错": [
+      {
+        "id": "gsm8k-test-514",
+        "evidence": "pred=gold=90000，reason 把答案读成 900,000"
+      }
+    ],
+    "假阳性：把模型答案与金标对调": [
+      {
+        "id": "gsm8k-test-1284",
+        "evidence": "pred=35/gold=25，reason 称 'model answer 25'"
+      }
+    ]
+  },
+  "qwen2.5:3b": {
+    "reason 自相矛盾：明说数值相同仍判 0": [
+      {
+        "id": "gsm8k-test-140",
+        "evidence": "reason '20 ... reference 20'，却判 0"
+      }
+    ],
+    "判为答案缺失/模糊（实际有明确 boxed 数值）": [
+      {
+        "id": "gsm8k-test-268",
+        "evidence": "输出以 \\boxed{1375} 结尾，被判 missing"
+      },
+      {
+        "id": "gsm8k-test-911",
+        "evidence": "输出以 \\boxed{64} 结尾，被判 missing"
+      }
+    ]
+  },
+  "qwen2.5:1.5b [fewshot]": {
+    "标签塌缩为全 0（60/60 判错，人工 42 正/18 负）": [
+      {
+        "id": "gsm8k-test-24",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-55",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-63",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-132",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-140",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-167",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-178",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-232",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-241",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-264",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-268",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-299",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-321",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-343",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-361",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-390",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-396",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-452",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-474",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-503",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-514",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-531",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-551",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-581",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-659",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-666",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-721",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-729",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-762",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-880",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-907",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-911",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-941",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-946",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-1007",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-1063",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-1144",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-1168",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-1225",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-1253",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-1289",
+        "evidence": "60 条全部输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-1307",
+        "evidence": "60 条全部输出 correct=0"
+      }
+    ]
+  },
+  "qwen2.5:1.5b [rubric]": {
+    "标签塌缩为全 1（59/60 判对，人工 42 正/18 负）": [
+      {
+        "id": "gsm8k-test-89",
+        "evidence": "60 条中 59 条输出 correct=1"
+      },
+      {
+        "id": "gsm8k-test-102",
+        "evidence": "60 条中 59 条输出 correct=1"
+      },
+      {
+        "id": "gsm8k-test-111",
+        "evidence": "60 条中 59 条输出 correct=1"
+      },
+      {
+        "id": "gsm8k-test-143",
+        "evidence": "60 条中 59 条输出 correct=1"
+      },
+      {
+        "id": "gsm8k-test-159",
+        "evidence": "60 条中 59 条输出 correct=1"
+      },
+      {
+        "id": "gsm8k-test-293",
+        "evidence": "60 条中 59 条输出 correct=1"
+      },
+      {
+        "id": "gsm8k-test-297",
+        "evidence": "60 条中 59 条输出 correct=1"
+      },
+      {
+        "id": "gsm8k-test-298",
+        "evidence": "60 条中 59 条输出 correct=1"
+      },
+      {
+        "id": "gsm8k-test-316",
+        "evidence": "60 条中 59 条输出 correct=1"
+      },
+      {
+        "id": "gsm8k-test-590",
+        "evidence": "60 条中 59 条输出 correct=1"
+      },
+      {
+        "id": "gsm8k-test-722",
+        "evidence": "60 条中 59 条输出 correct=1"
+      },
+      {
+        "id": "gsm8k-test-763",
+        "evidence": "60 条中 59 条输出 correct=1"
+      },
+      {
+        "id": "gsm8k-test-782",
+        "evidence": "60 条中 59 条输出 correct=1"
+      },
+      {
+        "id": "gsm8k-test-796",
+        "evidence": "60 条中 59 条输出 correct=1"
+      },
+      {
+        "id": "gsm8k-test-997",
+        "evidence": "60 条中 59 条输出 correct=1"
+      },
+      {
+        "id": "gsm8k-test-1201",
+        "evidence": "60 条中 59 条输出 correct=1"
+      },
+      {
+        "id": "gsm8k-test-1284",
+        "evidence": "60 条中 59 条输出 correct=1"
+      }
+    ]
+  },
+  "qwen2.5:3b [fewshot]": {
+    "负向塌缩（仅 8/60 判对，人工 42 正/18 负）": [
+      {
+        "id": "gsm8k-test-55",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-63",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-132",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-140",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-167",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-232",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-241",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-264",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-268",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-299",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-321",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-361",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-390",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-396",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-452",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-474",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-503",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-514",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-531",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-551",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-581",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-666",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-729",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-762",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-880",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-907",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-911",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-941",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-1007",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-1144",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-1168",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-1225",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-1253",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-1289",
+        "evidence": "52 条输出 correct=0"
+      }
+    ]
+  },
+  "qwen2.5:3b [rubric]": {
+    "负向塌缩（仅 8/60 判对，人工 42 正/18 负）": [
+      {
+        "id": "gsm8k-test-24",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-55",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-63",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-132",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-140",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-167",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-178",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-232",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-241",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-268",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-299",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-321",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-343",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-361",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-390",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-396",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-452",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-474",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-503",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-514",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-531",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-581",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-659",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-666",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-721",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-729",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-762",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-880",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-941",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-1007",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-1168",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-1225",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-1289",
+        "evidence": "52 条输出 correct=0"
+      },
+      {
+        "id": "gsm8k-test-1307",
+        "evidence": "52 条输出 correct=0"
+      }
+    ]
+  }
+}

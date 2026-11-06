@@ -1,0 +1,2455 @@
+{
+  "n": 150,
+  "rule": {
+    "n": 150,
+    "po": 0.9933333333333333,
+    "pe": 0.5672,
+    "kappa": 0.9845964263709179,
+    "confusion": {
+      "both_1": 102,
+      "a1_b0": 0,
+      "a0_b1": 1,
+      "both_0": 47
+    },
+    "ci95": [
+      0.9500554938956715,
+      1.0
+    ],
+    "width": 0.049944506104328545,
+    "iterations": 10000,
+    "seed": 20261105
+  },
+  "judges": [
+    {
+      "n": 150,
+      "po": 0.6266666666666667,
+      "pe": 0.4601777777777778,
+      "kappa": 0.3084142927712828,
+      "confusion": {
+        "both_1": 53,
+        "a1_b0": 6,
+        "a0_b1": 50,
+        "both_0": 41
+      },
+      "ci95": [
+        0.1887443172911115,
+        0.4337682276802897
+      ],
+      "width": 0.24502391038917823,
+      "iterations": 10000,
+      "seed": 20261105,
+      "judge_model": "qwen2.5:0.5b",
+      "judge_mode": "raw",
+      "key": "qwen2.5:0.5b",
+      "n_judged": 150,
+      "parse_rate": 1.0,
+      "n_for_halfwidth_005": 901,
+      "latency_ms_mean": 748.6,
+      "tokens_mean": 499.0,
+      "disagreements": [
+        {
+          "id": "gsm8k-test-55",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is 14, which is not numerically equal to the reference answer.",
+          "pred": 14.0,
+          "gold_final": "14",
+          "human_note": "#### 14 = gold"
+        },
+        {
+          "id": "gsm8k-test-63",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is not numerically equal to the reference answer.",
+          "pred": 1596.0,
+          "gold_final": "1596",
+          "human_note": "1596 = gold（美元题，单位不影响数值）"
+        },
+        {
+          "id": "gsm8k-test-132",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is 60, which is not numerically equal to the reference answer.",
+          "pred": 60.0,
+          "gold_final": "60",
+          "human_note": "60 = gold"
+        },
+        {
+          "id": "gsm8k-test-159",
+          "category": "steps_1_2",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's final answer is 7, which is the correct number of tadpoles Finn can see in the pond now.",
+          "pred": 7.0,
+          "gold_final": "15",
+          "human_note": "7 vs gold 15，算错"
+        },
+        {
+          "id": "gsm8k-test-167",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is 16, which is not numerically equal to the reference answer of 16.",
+          "pred": 16.0,
+          "gold_final": "16",
+          "human_note": "16 = gold"
+        },
+        {
+          "id": "gsm8k-test-178",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is 122, which is not numerically equal to the reference answer of 122.",
+          "pred": 122.0,
+          "gold_final": "122",
+          "human_note": "122 = gold"
+        },
+        {
+          "id": "gsm8k-test-232",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is 75, which is not numerically equal to the reference answer of 75.",
+          "pred": 75.0,
+          "gold_final": "75",
+          "human_note": "75 = gold"
+        },
+        {
+          "id": "gsm8k-test-241",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is 6, which is not numerically equal to the reference answer.",
+          "pred": 6.0,
+          "gold_final": "6",
+          "human_note": "6 = gold"
+        },
+        {
+          "id": "gsm8k-test-268",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The final answer is 1375, but the reference answer is 1375, which is the same.",
+          "pred": 1375.0,
+          "gold_final": "1375",
+          "human_note": "1375 = gold"
+        },
+        {
+          "id": "gsm8k-test-297",
+          "category": "steps_1_2",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's answer is 25 crates, which is the difference between the target and the actual crates sold.",
+          "pred": 25.0,
+          "gold_final": "55",
+          "human_note": "25 vs gold 55，题目理解错（问的是比目标少多少 vs 目标 55）"
+        },
+        {
+          "id": "gsm8k-test-299",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is not numerically equal to the reference answer.",
+          "pred": 31800.0,
+          "gold_final": "31800",
+          "human_note": "31800 = gold"
+        },
+        {
+          "id": "gsm8k-test-321",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "The final answer is not numerically equal to the reference answer.",
+          "pred": 1.0,
+          "gold_final": "1",
+          "human_note": "1 = gold"
+        },
+        {
+          "id": "gsm8k-test-338",
+          "category": "steps_1_2",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's final answer is 60, which is not numerically equal to the reference answer of 63.33.",
+          "pred": 63.33,
+          "gold_final": "60",
+          "human_note": "63.33 vs gold 60，除不尽后没有回到整数解"
+        },
+        {
+          "id": "gsm8k-test-343",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is not numerically equal to the reference answer.",
+          "pred": 180000.0,
+          "gold_final": "180000",
+          "human_note": "180000 = gold（米）"
+        },
+        {
+          "id": "gsm8k-test-361",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "The final answer is 20, but the reference answer is 20, which is incorrect.",
+          "pred": 20.0,
+          "gold_final": "20",
+          "human_note": "#### 20 = gold"
+        },
+        {
+          "id": "gsm8k-test-390",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is incorrect. Monica can use 12 inches of ribbon for each gift bow.",
+          "pred": 12.0,
+          "gold_final": "12",
+          "human_note": "12 = gold"
+        },
+        {
+          "id": "gsm8k-test-396",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The final answer is 3, but the reference answer is 3, which is the same.",
+          "pred": 3.0,
+          "gold_final": "3",
+          "human_note": "#### 3 = gold"
+        },
+        {
+          "id": "gsm8k-test-503",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is 18, which is not numerically equal to the reference answer.",
+          "pred": 18.0,
+          "gold_final": "18",
+          "human_note": "18 = gold"
+        },
+        {
+          "id": "gsm8k-test-514",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "The final answer is 90000, but the reference answer is 90000, which is the same.",
+          "pred": 90000.0,
+          "gold_final": "90000",
+          "human_note": "90,000 = gold 90000"
+        },
+        {
+          "id": "gsm8k-test-551",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is incorrect because it does not account for the change given.",
+          "pred": 17.0,
+          "gold_final": "17",
+          "human_note": "17 = gold"
+        },
+        {
+          "id": "gsm8k-test-880",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The final answer is 10, but the reference answer is 10, which is not numerically equal.",
+          "pred": 10.0,
+          "gold_final": "10",
+          "human_note": "10 = gold"
+        },
+        {
+          "id": "gsm8k-test-941",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The final answer is 842, but the reference answer is 900, which is not the same.",
+          "pred": 842.0,
+          "gold_final": "842",
+          "human_note": "842 = gold"
+        },
+        {
+          "id": "gsm8k-test-1201",
+          "category": "steps_3_4",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's answer is 44, which is the total number of fish with red stripes and blue stripes, not the sum of the two.",
+          "pred": 44.0,
+          "gold_final": "42",
+          "human_note": "44 vs gold 42，算错"
+        },
+        {
+          "id": "gsm8k-test-1225",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "The final answer is 3, but the reference answer is 5, so the model's answer is not numerically equal to the reference answer.",
+          "pred": 3.0,
+          "gold_final": "3",
+          "human_note": "#### 3 = gold"
+        },
+        {
+          "id": "gsm8k-test-1253",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is 120, which is not numerically equal to the reference answer of 120.",
+          "pred": 120.0,
+          "gold_final": "120",
+          "human_note": "120 = gold"
+        },
+        {
+          "id": "gsm8k-test-1289",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is 101, which is not numerically equal to the reference answer of 101.",
+          "pred": 101.0,
+          "gold_final": "101",
+          "human_note": "101 = gold"
+        },
+        {
+          "id": "gsm8k-test-1307",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is 8, which is not numerically equal to the reference answer.",
+          "pred": 8.0,
+          "gold_final": "8",
+          "human_note": "8 = gold"
+        },
+        {
+          "id": "gsm8k-test-103",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is not numerically equal to the reference answer.",
+          "pred": 140.0,
+          "gold_final": "140",
+          "human_note": "boxed 140 = gold"
+        },
+        {
+          "id": "gsm8k-test-1036",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "The final answer is 10, but the reference answer is 10, so the model's answer is wrong.",
+          "pred": 10.0,
+          "gold_final": "10",
+          "human_note": "boxed 10 = gold"
+        },
+        {
+          "id": "gsm8k-test-1257",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is not numerically equal to the reference answer.",
+          "pred": 14.0,
+          "gold_final": "14",
+          "human_note": "boxed 14 = gold"
+        },
+        {
+          "id": "gsm8k-test-126",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is 82, which is not numerically equal to the reference answer of 82.",
+          "pred": 82.0,
+          "gold_final": "82",
+          "human_note": "boxed 82 = gold"
+        },
+        {
+          "id": "gsm8k-test-491",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "The final answer is 16, which is not numerically equal to the reference answer.",
+          "pred": 16.0,
+          "gold_final": "16",
+          "human_note": "boxed 16 = gold"
+        },
+        {
+          "id": "gsm8k-test-569",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is 21, which is not numerically equal to the reference answer.",
+          "pred": 21.0,
+          "gold_final": "21",
+          "human_note": "boxed 21 = gold"
+        },
+        {
+          "id": "gsm8k-test-842",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is missing or ambiguous.",
+          "pred": 10.0,
+          "gold_final": "10",
+          "human_note": "boxed 10 = gold"
+        },
+        {
+          "id": "gsm8k-test-867",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is 7, which is not numerically equal to the reference answer.",
+          "pred": 7.0,
+          "gold_final": "7",
+          "human_note": "boxed 7 = gold"
+        },
+        {
+          "id": "gsm8k-test-883",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is not numerically equal to the reference answer.",
+          "pred": 25.0,
+          "gold_final": "25",
+          "human_note": "boxed 25 = gold"
+        },
+        {
+          "id": "gsm8k-test-1048",
+          "category": "steps_3_4",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's answer is 9877.80, which is numerically equal to the reference answer of 7400.",
+          "pred": 9877.8,
+          "gold_final": "7400",
+          "human_note": "9877.80 ≠ 7400：折旧系数算错"
+        },
+        {
+          "id": "gsm8k-test-1119",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is missing or ambiguous.",
+          "pred": 18.0,
+          "gold_final": "18",
+          "human_note": "boxed 18 = gold"
+        },
+        {
+          "id": "gsm8k-test-1154",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is 30, which is not numerically equal to the reference answer.",
+          "pred": 30.0,
+          "gold_final": "30",
+          "human_note": "boxed 30 = gold"
+        },
+        {
+          "id": "gsm8k-test-291",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The final answer is not numerically equal to the reference answer.",
+          "pred": 2.0,
+          "gold_final": "2",
+          "human_note": "boxed 2 = gold"
+        },
+        {
+          "id": "gsm8k-test-309",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is missing or ambiguous.",
+          "pred": 8.0,
+          "gold_final": "8",
+          "human_note": "boxed 8 = gold"
+        },
+        {
+          "id": "gsm8k-test-451",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The final answer is not numerically equal to the reference answer.",
+          "pred": 11050.0,
+          "gold_final": "11050",
+          "human_note": "boxed 11050 = gold"
+        },
+        {
+          "id": "gsm8k-test-654",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is 2, which is not numerically equal to the reference answer.",
+          "pred": 2.0,
+          "gold_final": "2",
+          "human_note": "末尾 2 打 = gold"
+        },
+        {
+          "id": "gsm8k-test-671",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The final answer is 4, but the reference answer is 4, which is incorrect.",
+          "pred": 4.0,
+          "gold_final": "4",
+          "human_note": "boxed 4 = gold"
+        },
+        {
+          "id": "gsm8k-test-728",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is not numerically equal to the reference answer.",
+          "pred": 40.0,
+          "gold_final": "40",
+          "human_note": "boxed 40 = gold"
+        },
+        {
+          "id": "gsm8k-test-77",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The final answer is 100, not 100.",
+          "pred": 100.0,
+          "gold_final": "100",
+          "human_note": "boxed 100 = gold"
+        },
+        {
+          "id": "gsm8k-test-833",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is 40, which is not numerically equal to the reference answer.",
+          "pred": 40.0,
+          "gold_final": "40",
+          "human_note": "#### 40 = gold"
+        },
+        {
+          "id": "gsm8k-test-856",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is not numerically equal to the reference answer.",
+          "pred": 7.0,
+          "gold_final": "7",
+          "human_note": "boxed 7 = gold（末段 2 余数为中间量）"
+        },
+        {
+          "id": "gsm8k-test-921",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is 4, which is not numerically equal to the reference answer.",
+          "pred": 4.0,
+          "gold_final": "4",
+          "human_note": "boxed 4 = gold"
+        },
+        {
+          "id": "gsm8k-test-1045",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is 420, which is not numerically equal to the reference answer.",
+          "pred": 420.0,
+          "gold_final": "420",
+          "human_note": "boxed 420 = gold"
+        },
+        {
+          "id": "gsm8k-test-1233",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "The final answer is 81, but the reference answer is 81, which is the same.",
+          "pred": 81.0,
+          "gold_final": "81",
+          "human_note": "boxed 81 = gold"
+        },
+        {
+          "id": "gsm8k-test-279",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is not numerically equal to the reference answer.",
+          "pred": 6.0,
+          "gold_final": "6",
+          "human_note": "boxed 6 = gold"
+        },
+        {
+          "id": "gsm8k-test-550",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "The final answer is not numerically equal to the reference answer.",
+          "pred": 27.0,
+          "gold_final": "27",
+          "human_note": "boxed 27 = gold"
+        },
+        {
+          "id": "gsm8k-test-84",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is 15, which is not numerically equal to the reference answer of 15.",
+          "pred": 15.0,
+          "gold_final": "15",
+          "human_note": "boxed 15 = gold"
+        },
+        {
+          "id": "gsm8k-test-938",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "The final answer is 4, but the reference answer is 4, which is not numerically equal.",
+          "pred": 4.0,
+          "gold_final": "4",
+          "human_note": "#### 4 = gold"
+        },
+        {
+          "id": "gsm8k-test-999",
+          "category": "steps_5_plus",
+          "human": 0,
+          "judge": 1,
+          "reason": "The final answer is 40%, which is not numerically equal to the reference answer of 25%.",
+          "pred": 40.0,
+          "gold_final": "25",
+          "human_note": "40%，金标 25：比例算错"
+        }
+      ]
+    },
+    {
+      "n": 149,
+      "po": 0.8657718120805369,
+      "pe": 0.6245214179541463,
+      "kappa": 0.642514395393474,
+      "confusion": {
+        "both_1": 103,
+        "a1_b0": 20,
+        "a0_b1": 0,
+        "both_0": 26
+      },
+      "ci95": [
+        0.5016722408026756,
+        0.7706878181602936
+      ],
+      "width": 0.26901557735761805,
+      "iterations": 10000,
+      "seed": 20261105,
+      "judge_model": "qwen2.5:1.5b",
+      "judge_mode": "raw",
+      "key": "qwen2.5:1.5b",
+      "n_judged": 149,
+      "parse_rate": 0.9933333333333333,
+      "n_for_halfwidth_005": 1078,
+      "latency_ms_mean": 618.2,
+      "tokens_mean": 493.2,
+      "disagreements": [
+        {
+          "id": "gsm8k-test-143",
+          "category": "steps_3_4",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's final answer is $23.10, which is not equal to the reference answer of $16.",
+          "pred": 23.1,
+          "gold_final": "16",
+          "human_note": "23.10 vs gold 16，算错"
+        },
+        {
+          "id": "gsm8k-test-316",
+          "category": "steps_3_4",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's answer is 56 kg, which matches the reference answer of 156 kg.",
+          "pred": 56.0,
+          "gold_final": "156",
+          "human_note": "56 vs gold 156，算错"
+        },
+        {
+          "id": "gsm8k-test-590",
+          "category": "steps_3_4",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's answer is 310, which matches the reference answer of 319.",
+          "pred": 310.0,
+          "gold_final": "319",
+          "human_note": "310 vs gold 319，算错"
+        },
+        {
+          "id": "gsm8k-test-722",
+          "category": "steps_1_2",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's answer is 645, which matches the reference answer of 255.",
+          "pred": 645.0,
+          "gold_final": "255",
+          "human_note": "645 vs gold 255，算错"
+        },
+        {
+          "id": "gsm8k-test-997",
+          "category": "steps_1_2",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's answer is 6200, which matches the reference answer of 6.",
+          "pred": 6200.0,
+          "gold_final": "6",
+          "human_note": "6200 vs gold 6，算错"
+        },
+        {
+          "id": "gsm8k-test-1201",
+          "category": "steps_3_4",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's answer is 44, which matches the reference answer of 42.",
+          "pred": 44.0,
+          "gold_final": "42",
+          "human_note": "44 vs gold 42，算错"
+        },
+        {
+          "id": "gsm8k-test-1284",
+          "category": "steps_3_4",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's answer of 25 is incorrect. The correct answer is 35.",
+          "pred": 35.0,
+          "gold_final": "25",
+          "human_note": "35 vs gold 25，算错"
+        },
+        {
+          "id": "gsm8k-test-628",
+          "category": "steps_1_2",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's answer is 5 years, which is numerically equal to the reference answer of 4 years.",
+          "pred": 5.0,
+          "gold_final": "4",
+          "human_note": "向上取整得 5，金标 4：不应取整"
+        },
+        {
+          "id": "gsm8k-test-639",
+          "category": "steps_1_2",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's answer is 216, which is numerically equal to the reference answer of 216.",
+          "pred": 3.6,
+          "gold_final": "216",
+          "human_note": "给 3.6 分钟，金标 216 秒：单位口径不符"
+        },
+        {
+          "id": "gsm8k-test-761",
+          "category": "steps_1_2",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's answer is 36, which matches the reference answer of 27.",
+          "pred": 36.0,
+          "gold_final": "27",
+          "human_note": "用 18×2=36，金标 27：三分之二关系用反"
+        },
+        {
+          "id": "gsm8k-test-1120",
+          "category": "steps_3_4",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's answer is 16,800, which is numerically equal to the reference answer of 560 miles per month.",
+          "pred": 16800.0,
+          "gold_final": "560",
+          "human_note": "16800 ≠ 560：分钟当小时乘"
+        },
+        {
+          "id": "gsm8k-test-162",
+          "category": "steps_3_4",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's answer is 207.63, which is not numerically equal to the reference answer of 92.",
+          "pred": 207.63,
+          "gold_final": "92",
+          "human_note": "207.63 ≠ 92：复利算错"
+        },
+        {
+          "id": "gsm8k-test-296",
+          "category": "steps_3_4",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's answer is 6, which matches the reference answer of 3.",
+          "pred": 6.0,
+          "gold_final": "3",
+          "human_note": "6 周，金标 3 周：未扣已吃部分"
+        },
+        {
+          "id": "gsm8k-test-357",
+          "category": "steps_3_4",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's answer is 14, which matches the reference answer of 2.",
+          "pred": 14.0,
+          "gold_final": "2",
+          "human_note": "14，金标 2：把 70 全当可用金额"
+        },
+        {
+          "id": "gsm8k-test-493",
+          "category": "steps_3_4",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's final answer is 350 cents, which is not equal to the reference answer of 25 cents.",
+          "pred": 350.0,
+          "gold_final": "25",
+          "human_note": "350 美分，金标 25 美分：换算/折扣算错"
+        },
+        {
+          "id": "gsm8k-test-539",
+          "category": "steps_3_4",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's answer is 60, which matches the reference answer of 35.",
+          "pred": 60.0,
+          "gold_final": "35",
+          "human_note": "60，金标 35：折扣方向算反"
+        },
+        {
+          "id": "gsm8k-test-952",
+          "category": "steps_3_4",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's answer of 480 is not numerically equal to the reference answer of 360.",
+          "pred": 480.0,
+          "gold_final": "360",
+          "human_note": "480，金标 360：时间区间数算错"
+        },
+        {
+          "id": "gsm8k-test-1240",
+          "category": "steps_5_plus",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's answer is 6, which is not numerically equal to the reference answer of 2.",
+          "pred": 6.0,
+          "gold_final": "2",
+          "human_note": "6，金标 2：取整前算错"
+        },
+        {
+          "id": "gsm8k-test-199",
+          "category": "steps_5_plus",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's final answer is 15000, which matches the reference answer of 7500.",
+          "pred": 15000.0,
+          "gold_final": "7500",
+          "human_note": "15000 美分，金标 7500：翻倍"
+        },
+        {
+          "id": "gsm8k-test-955",
+          "category": "steps_5_plus",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's answer is 300, which matches the reference answer of 100.",
+          "pred": 300.0,
+          "gold_final": "100",
+          "human_note": "300，金标 100：占用/未占用搞反"
+        }
+      ]
+    },
+    {
+      "n": 60,
+      "po": 0.3,
+      "pe": 0.30000000000000004,
+      "kappa": -7.930164461608261e-17,
+      "confusion": {
+        "both_1": 0,
+        "a1_b0": 0,
+        "a0_b1": 42,
+        "both_0": 18
+      },
+      "ci95": [
+        -8.764918615461762e-17,
+        9.001808307771539e-17
+      ],
+      "width": 1.77667269232333e-16,
+      "iterations": 10000,
+      "seed": 20261105,
+      "judge_model": "qwen2.5:1.5b",
+      "judge_mode": "fewshot",
+      "key": "qwen2.5:1.5b [fewshot]",
+      "n_judged": 60,
+      "parse_rate": 0.4,
+      "n_for_halfwidth_005": 0,
+      "latency_ms_mean": 398.0,
+      "tokens_mean": 600.3,
+      "disagreements": [
+        {
+          "id": "gsm8k-test-24",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's answer 26 does not match the reference answer 26",
+          "pred": 26.0,
+          "gold_final": "26",
+          "human_note": "boxed 26 = gold；未用 #### 标记，但最终答案明确"
+        },
+        {
+          "id": "gsm8k-test-55",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's answer is 14, but the reference answer is 12",
+          "pred": 14.0,
+          "gold_final": "14",
+          "human_note": "#### 14 = gold"
+        },
+        {
+          "id": "gsm8k-test-63",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's answer 1596 does not match the reference 1596",
+          "pred": 1596.0,
+          "gold_final": "1596",
+          "human_note": "1596 = gold（美元题，单位不影响数值）"
+        },
+        {
+          "id": "gsm8k-test-132",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's answer 60 does not match the reference 60",
+          "pred": 60.0,
+          "gold_final": "60",
+          "human_note": "60 = gold"
+        },
+        {
+          "id": "gsm8k-test-140",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 20 != 40",
+          "pred": 20.0,
+          "gold_final": "20",
+          "human_note": "20(%) = gold 20，百分号不影响数值"
+        },
+        {
+          "id": "gsm8k-test-167",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's answer 16 does not match the reference 16",
+          "pred": 16.0,
+          "gold_final": "16",
+          "human_note": "16 = gold"
+        },
+        {
+          "id": "gsm8k-test-178",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "Final answer 122 does not match the reference 122",
+          "pred": 122.0,
+          "gold_final": "122",
+          "human_note": "122 = gold"
+        },
+        {
+          "id": "gsm8k-test-232",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's answer 75 does not match the reference answer 50",
+          "pred": 75.0,
+          "gold_final": "75",
+          "human_note": "75 = gold"
+        },
+        {
+          "id": "gsm8k-test-241",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's answer 6 does not match the reference answer 6",
+          "pred": 6.0,
+          "gold_final": "6",
+          "human_note": "6 = gold"
+        },
+        {
+          "id": "gsm8k-test-264",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 400 != 400",
+          "pred": 400.0,
+          "gold_final": "400",
+          "human_note": "400 = gold"
+        },
+        {
+          "id": "gsm8k-test-268",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's answer 1375 does not match the reference answer 1375",
+          "pred": 1375.0,
+          "gold_final": "1375",
+          "human_note": "1375 = gold"
+        },
+        {
+          "id": "gsm8k-test-299",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 31800 != 31800",
+          "pred": 31800.0,
+          "gold_final": "31800",
+          "human_note": "31800 = gold"
+        },
+        {
+          "id": "gsm8k-test-321",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 1 != 1",
+          "pred": 1.0,
+          "gold_final": "1",
+          "human_note": "1 = gold"
+        },
+        {
+          "id": "gsm8k-test-343",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's answer 180000 does not match the reference 180000",
+          "pred": 180000.0,
+          "gold_final": "180000",
+          "human_note": "180000 = gold（米）"
+        },
+        {
+          "id": "gsm8k-test-361",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's answer is incorrect",
+          "pred": 20.0,
+          "gold_final": "20",
+          "human_note": "#### 20 = gold"
+        },
+        {
+          "id": "gsm8k-test-390",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's answer 12 is not numerically equal to the reference answer 12",
+          "pred": 12.0,
+          "gold_final": "12",
+          "human_note": "12 = gold"
+        },
+        {
+          "id": "gsm8k-test-396",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "Final answer 3 does not match the reference 12.",
+          "pred": 3.0,
+          "gold_final": "3",
+          "human_note": "#### 3 = gold"
+        },
+        {
+          "id": "gsm8k-test-452",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 50 != 50",
+          "pred": 50.0,
+          "gold_final": "50",
+          "human_note": "50 = gold"
+        },
+        {
+          "id": "gsm8k-test-474",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's final answer does not match the reference answer",
+          "pred": 80.0,
+          "gold_final": "80",
+          "human_note": "80 = gold"
+        },
+        {
+          "id": "gsm8k-test-503",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's answer 18 does not match the reference answer 18",
+          "pred": 18.0,
+          "gold_final": "18",
+          "human_note": "18 = gold"
+        },
+        {
+          "id": "gsm8k-test-514",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 90,000 != 90,000",
+          "pred": 90000.0,
+          "gold_final": "90000",
+          "human_note": "90,000 = gold 90000"
+        },
+        {
+          "id": "gsm8k-test-531",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 66 != 48",
+          "pred": 66.0,
+          "gold_final": "66",
+          "human_note": "66 = gold"
+        },
+        {
+          "id": "gsm8k-test-551",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's answer 17 does not match the reference answer 17",
+          "pred": 17.0,
+          "gold_final": "17",
+          "human_note": "17 = gold"
+        },
+        {
+          "id": "gsm8k-test-581",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 215 != 215",
+          "pred": 215.0,
+          "gold_final": "215",
+          "human_note": "215 = gold"
+        },
+        {
+          "id": "gsm8k-test-659",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 3 != 0",
+          "pred": 3.0,
+          "gold_final": "3",
+          "human_note": "3 = gold"
+        },
+        {
+          "id": "gsm8k-test-666",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 120 != 120",
+          "pred": 120.0,
+          "gold_final": "120",
+          "human_note": "120 = gold"
+        },
+        {
+          "id": "gsm8k-test-721",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's answer 2450 does not match the reference answer 2450",
+          "pred": 2450.0,
+          "gold_final": "2450",
+          "human_note": "2450 = gold"
+        },
+        {
+          "id": "gsm8k-test-729",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's answer 1000 does not match the reference 1000",
+          "pred": 1000.0,
+          "gold_final": "1000",
+          "human_note": "1000 = gold"
+        },
+        {
+          "id": "gsm8k-test-762",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 85 != 85",
+          "pred": 85.0,
+          "gold_final": "85",
+          "human_note": "85 = gold"
+        },
+        {
+          "id": "gsm8k-test-880",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 10 != 10",
+          "pred": 10.0,
+          "gold_final": "10",
+          "human_note": "10 = gold"
+        },
+        {
+          "id": "gsm8k-test-907",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 16 != 16",
+          "pred": 16.0,
+          "gold_final": "16",
+          "human_note": "16 = gold"
+        },
+        {
+          "id": "gsm8k-test-911",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's final answer does not match the reference answer",
+          "pred": 64.0,
+          "gold_final": "64",
+          "human_note": "64 = gold"
+        },
+        {
+          "id": "gsm8k-test-941",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 842 != 842",
+          "pred": 842.0,
+          "gold_final": "842",
+          "human_note": "842 = gold"
+        },
+        {
+          "id": "gsm8k-test-946",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 450 != 450",
+          "pred": 450.0,
+          "gold_final": "450",
+          "human_note": "450 = gold"
+        },
+        {
+          "id": "gsm8k-test-1007",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's answer 34 does not match the reference 34",
+          "pred": 34.0,
+          "gold_final": "34",
+          "human_note": "34 = gold"
+        },
+        {
+          "id": "gsm8k-test-1063",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's final answer does not match the reference answer",
+          "pred": 320.0,
+          "gold_final": "320",
+          "human_note": "320 = gold"
+        },
+        {
+          "id": "gsm8k-test-1144",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 34 != 34",
+          "pred": 34.0,
+          "gold_final": "34",
+          "human_note": "34 = gold"
+        },
+        {
+          "id": "gsm8k-test-1168",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's answer 20 does not match the reference 20",
+          "pred": 20.0,
+          "gold_final": "20",
+          "human_note": "20 = gold"
+        },
+        {
+          "id": "gsm8k-test-1225",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's answer 3 does not match the reference answer 12",
+          "pred": 3.0,
+          "gold_final": "3",
+          "human_note": "#### 3 = gold"
+        },
+        {
+          "id": "gsm8k-test-1253",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 120 != 120",
+          "pred": 120.0,
+          "gold_final": "120",
+          "human_note": "120 = gold"
+        },
+        {
+          "id": "gsm8k-test-1289",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's answer 101 does not match the reference answer 101",
+          "pred": 101.0,
+          "gold_final": "101",
+          "human_note": "101 = gold"
+        },
+        {
+          "id": "gsm8k-test-1307",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's answer 8 is not equal to the reference answer 8",
+          "pred": 8.0,
+          "gold_final": "8",
+          "human_note": "8 = gold"
+        }
+      ]
+    },
+    {
+      "n": 60,
+      "po": 0.7166666666666667,
+      "pe": 0.6933333333333332,
+      "kappa": 0.07608695652173941,
+      "confusion": {
+        "both_1": 42,
+        "a1_b0": 17,
+        "a0_b1": 0,
+        "both_0": 1
+      },
+      "ci95": [
+        0.0,
+        0.25287356321839116
+      ],
+      "width": 0.25287356321839116,
+      "iterations": 10000,
+      "seed": 20261105,
+      "judge_model": "qwen2.5:1.5b",
+      "judge_mode": "rubric",
+      "key": "qwen2.5:1.5b [rubric]",
+      "n_judged": 60,
+      "parse_rate": 0.4,
+      "n_for_halfwidth_005": 384,
+      "latency_ms_mean": 743.8,
+      "tokens_mean": 656.0,
+      "disagreements": [
+        {
+          "id": "gsm8k-test-89",
+          "category": "steps_1_2",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's final answer of 18 is numerically equal to the reference answer of 24.",
+          "pred": 18.0,
+          "gold_final": "24",
+          "human_note": "18 vs gold 24，算错"
+        },
+        {
+          "id": "gsm8k-test-102",
+          "category": "steps_3_4",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's final answer of 28 matches the reference answer of 26.",
+          "pred": 28.0,
+          "gold_final": "26",
+          "human_note": "28 vs gold 26，算错"
+        },
+        {
+          "id": "gsm8k-test-111",
+          "category": "steps_3_4",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's answer is 16, which matches the reference answer of 16.",
+          "pred": 44.0,
+          "gold_final": "16",
+          "human_note": "输出被截断，没有给出最终答案"
+        },
+        {
+          "id": "gsm8k-test-143",
+          "category": "steps_3_4",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's final answer is $23.10, which matches the reference answer of 16.",
+          "pred": 23.1,
+          "gold_final": "16",
+          "human_note": "23.10 vs gold 16，算错"
+        },
+        {
+          "id": "gsm8k-test-159",
+          "category": "steps_1_2",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's final answer is 7, which matches the reference answer of 15.",
+          "pred": 7.0,
+          "gold_final": "15",
+          "human_note": "7 vs gold 15，算错"
+        },
+        {
+          "id": "gsm8k-test-293",
+          "category": "steps_3_4",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's final answer of 81 matches the reference answer of 83.",
+          "pred": 81.0,
+          "gold_final": "83",
+          "human_note": "81 vs gold 83，算错"
+        },
+        {
+          "id": "gsm8k-test-297",
+          "category": "steps_1_2",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's final answer of 25 crates is numerically equal to the reference answer of 55.",
+          "pred": 25.0,
+          "gold_final": "55",
+          "human_note": "25 vs gold 55，题目理解错（问的是比目标少多少 vs 目标 55）"
+        },
+        {
+          "id": "gsm8k-test-298",
+          "category": "steps_3_4",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's final answer of 750 is numerically equal to the reference answer of 500.",
+          "pred": 750.0,
+          "gold_final": "500",
+          "human_note": "750 vs gold 500，算错"
+        },
+        {
+          "id": "gsm8k-test-316",
+          "category": "steps_3_4",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's final answer is 56, which matches the reference answer of 156.",
+          "pred": 56.0,
+          "gold_final": "156",
+          "human_note": "56 vs gold 156，算错"
+        },
+        {
+          "id": "gsm8k-test-590",
+          "category": "steps_3_4",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's final answer is 310, which matches the reference answer of 319.",
+          "pred": 310.0,
+          "gold_final": "319",
+          "human_note": "310 vs gold 319，算错"
+        },
+        {
+          "id": "gsm8k-test-722",
+          "category": "steps_1_2",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's final answer is 645, which matches the reference answer of 255.",
+          "pred": 645.0,
+          "gold_final": "255",
+          "human_note": "645 vs gold 255，算错"
+        },
+        {
+          "id": "gsm8k-test-763",
+          "category": "steps_5_plus",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's final answer is 166.6667, which is numerically equal to the reference answer 100.",
+          "pred": 6.0,
+          "gold_final": "100",
+          "human_note": "166.67 vs gold 100；规则抽取把 \\overline{6} 取成 6，但二值判定仍为错"
+        },
+        {
+          "id": "gsm8k-test-782",
+          "category": "steps_5_plus",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's final answer of 27 is numerically equal to the reference answer of 54.",
+          "pred": 27.0,
+          "gold_final": "54",
+          "human_note": "27 vs gold 54，算错"
+        },
+        {
+          "id": "gsm8k-test-796",
+          "category": "steps_5_plus",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's answer and the reference answer are both 104000, which is numerically equal.",
+          "pred": 104000.0,
+          "gold_final": "2880000",
+          "human_note": "104000 vs gold 2880000，算错"
+        },
+        {
+          "id": "gsm8k-test-997",
+          "category": "steps_1_2",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's final answer is 6200, which is numerically equal to the reference answer of 6.",
+          "pred": 6200.0,
+          "gold_final": "6",
+          "human_note": "6200 vs gold 6，算错"
+        },
+        {
+          "id": "gsm8k-test-1201",
+          "category": "steps_3_4",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's final answer of 44 matches the reference answer of 42.",
+          "pred": 44.0,
+          "gold_final": "42",
+          "human_note": "44 vs gold 42，算错"
+        },
+        {
+          "id": "gsm8k-test-1284",
+          "category": "steps_3_4",
+          "human": 0,
+          "judge": 1,
+          "reason": "The model's final answer of 35 matches the reference answer of 25.",
+          "pred": 35.0,
+          "gold_final": "25",
+          "human_note": "35 vs gold 25，算错"
+        }
+      ]
+    },
+    {
+      "n": 150,
+      "po": 0.92,
+      "pe": 0.5398222222222222,
+      "kappa": 0.8261541433262508,
+      "confusion": {
+        "both_1": 91,
+        "a1_b0": 0,
+        "a0_b1": 12,
+        "both_0": 47
+      },
+      "ci95": [
+        0.7257100883675446,
+        0.9133448873483535
+      ],
+      "width": 0.18763479898080893,
+      "iterations": 10000,
+      "seed": 20261105,
+      "judge_model": "qwen2.5:3b",
+      "judge_mode": "raw",
+      "key": "qwen2.5:3b",
+      "n_judged": 150,
+      "parse_rate": 1.0,
+      "n_for_halfwidth_005": 528,
+      "latency_ms_mean": 1842.2,
+      "tokens_mean": 491.6,
+      "disagreements": [
+        {
+          "id": "gsm8k-test-140",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's answer is 20, but the reference answer is 20.",
+          "pred": 20.0,
+          "gold_final": "20",
+          "human_note": "20(%) = gold 20，百分号不影响数值"
+        },
+        {
+          "id": "gsm8k-test-268",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's answer is missing or ambiguous",
+          "pred": 1375.0,
+          "gold_final": "1375",
+          "human_note": "1375 = gold"
+        },
+        {
+          "id": "gsm8k-test-911",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's answer is missing or ambiguous",
+          "pred": 64.0,
+          "gold_final": "64",
+          "human_note": "64 = gold"
+        },
+        {
+          "id": "gsm8k-test-1257",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's answer is missing or ambiguous",
+          "pred": 14.0,
+          "gold_final": "14",
+          "human_note": "boxed 14 = gold"
+        },
+        {
+          "id": "gsm8k-test-149",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's answer is 16, which matches the reference answer.",
+          "pred": 16.0,
+          "gold_final": "16",
+          "human_note": "boxed 16 = gold"
+        },
+        {
+          "id": "gsm8k-test-215",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's answer is missing or ambiguous",
+          "pred": 44.0,
+          "gold_final": "44",
+          "human_note": "#### 44 = gold"
+        },
+        {
+          "id": "gsm8k-test-569",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's answer is missing or ambiguous",
+          "pred": 21.0,
+          "gold_final": "21",
+          "human_note": "boxed 21 = gold"
+        },
+        {
+          "id": "gsm8k-test-867",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's answer is missing or ambiguous",
+          "pred": 7.0,
+          "gold_final": "7",
+          "human_note": "boxed 7 = gold"
+        },
+        {
+          "id": "gsm8k-test-1119",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's answer is missing or not provided",
+          "pred": 18.0,
+          "gold_final": "18",
+          "human_note": "boxed 18 = gold"
+        },
+        {
+          "id": "gsm8k-test-728",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's answer is 40, which matches the reference answer",
+          "pred": 40.0,
+          "gold_final": "40",
+          "human_note": "boxed 40 = gold"
+        },
+        {
+          "id": "gsm8k-test-833",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's answer is 480 inches, but the reference answer is in feet.",
+          "pred": 40.0,
+          "gold_final": "40",
+          "human_note": "#### 40 = gold"
+        },
+        {
+          "id": "gsm8k-test-1011",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's answer is missing or ambiguous",
+          "pred": 6000.0,
+          "gold_final": "6000",
+          "human_note": "boxed 6000 = gold"
+        }
+      ]
+    },
+    {
+      "n": 60,
+      "po": 0.43333333333333335,
+      "pe": 0.3533333333333334,
+      "kappa": 0.12371134020618552,
+      "confusion": {
+        "both_1": 8,
+        "a1_b0": 0,
+        "a0_b1": 34,
+        "both_0": 18
+      },
+      "ci95": [
+        0.04651162790697674,
+        0.23529411764705876
+      ],
+      "width": 0.18878248974008202,
+      "iterations": 10000,
+      "seed": 20261105,
+      "judge_model": "qwen2.5:3b",
+      "judge_mode": "fewshot",
+      "key": "qwen2.5:3b [fewshot]",
+      "n_judged": 60,
+      "parse_rate": 0.4,
+      "n_for_halfwidth_005": 214,
+      "latency_ms_mean": 1125.5,
+      "tokens_mean": 598.9,
+      "disagreements": [
+        {
+          "id": "gsm8k-test-55",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 14 == reference answer 14",
+          "pred": 14.0,
+          "gold_final": "14",
+          "human_note": "#### 14 = gold"
+        },
+        {
+          "id": "gsm8k-test-63",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's final answer 1596 matches the reference answer",
+          "pred": 1596.0,
+          "gold_final": "1596",
+          "human_note": "1596 = gold（美元题，单位不影响数值）"
+        },
+        {
+          "id": "gsm8k-test-132",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's answer is missing or ambiguous",
+          "pred": 60.0,
+          "gold_final": "60",
+          "human_note": "60 = gold"
+        },
+        {
+          "id": "gsm8k-test-140",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's final answer is 20 instead of 20%",
+          "pred": 20.0,
+          "gold_final": "20",
+          "human_note": "20(%) = gold 20，百分号不影响数值"
+        },
+        {
+          "id": "gsm8k-test-167",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 16 == reference answer 16",
+          "pred": 16.0,
+          "gold_final": "16",
+          "human_note": "16 = gold"
+        },
+        {
+          "id": "gsm8k-test-232",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's answer is missing or ambiguous",
+          "pred": 75.0,
+          "gold_final": "75",
+          "human_note": "75 = gold"
+        },
+        {
+          "id": "gsm8k-test-241",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's answer is missing the final numeric value",
+          "pred": 6.0,
+          "gold_final": "6",
+          "human_note": "6 = gold"
+        },
+        {
+          "id": "gsm8k-test-264",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's final answer is missing or ambiguous",
+          "pred": 400.0,
+          "gold_final": "400",
+          "human_note": "400 = gold"
+        },
+        {
+          "id": "gsm8k-test-268",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's answer is missing or ambiguous",
+          "pred": 1375.0,
+          "gold_final": "1375",
+          "human_note": "1375 = gold"
+        },
+        {
+          "id": "gsm8k-test-299",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's answer is missing or ambiguous",
+          "pred": 31800.0,
+          "gold_final": "31800",
+          "human_note": "31800 = gold"
+        },
+        {
+          "id": "gsm8k-test-321",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's answer is missing or ambiguous",
+          "pred": 1.0,
+          "gold_final": "1",
+          "human_note": "1 = gold"
+        },
+        {
+          "id": "gsm8k-test-361",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 20 == reference answer 20",
+          "pred": 20.0,
+          "gold_final": "20",
+          "human_note": "#### 20 = gold"
+        },
+        {
+          "id": "gsm8k-test-390",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 12 == 12",
+          "pred": 12.0,
+          "gold_final": "12",
+          "human_note": "12 = gold"
+        },
+        {
+          "id": "gsm8k-test-396",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's final answer 3 matches the reference answer 3",
+          "pred": 3.0,
+          "gold_final": "3",
+          "human_note": "#### 3 = gold"
+        },
+        {
+          "id": "gsm8k-test-452",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 50 != 80",
+          "pred": 50.0,
+          "gold_final": "50",
+          "human_note": "50 = gold"
+        },
+        {
+          "id": "gsm8k-test-474",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's answer is missing or ambiguous",
+          "pred": 80.0,
+          "gold_final": "80",
+          "human_note": "80 = gold"
+        },
+        {
+          "id": "gsm8k-test-503",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 18 == reference answer 18",
+          "pred": 18.0,
+          "gold_final": "18",
+          "human_note": "18 = gold"
+        },
+        {
+          "id": "gsm8k-test-514",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's final answer 90000 does not match the reference answer 90000",
+          "pred": 90000.0,
+          "gold_final": "90000",
+          "human_note": "90,000 = gold 90000"
+        },
+        {
+          "id": "gsm8k-test-531",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's final answer 66 does not match the reference answer 66",
+          "pred": 66.0,
+          "gold_final": "66",
+          "human_note": "66 = gold"
+        },
+        {
+          "id": "gsm8k-test-551",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's final answer is 17 but the reference answer is 17",
+          "pred": 17.0,
+          "gold_final": "17",
+          "human_note": "17 = gold"
+        },
+        {
+          "id": "gsm8k-test-581",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's final answer 215 matches the reference answer",
+          "pred": 215.0,
+          "gold_final": "215",
+          "human_note": "215 = gold"
+        },
+        {
+          "id": "gsm8k-test-666",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's final answer is 120, which is not equal to the reference answer of 12",
+          "pred": 120.0,
+          "gold_final": "120",
+          "human_note": "120 = gold"
+        },
+        {
+          "id": "gsm8k-test-729",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's final answer 1000 matches the reference answer",
+          "pred": 1000.0,
+          "gold_final": "1000",
+          "human_note": "1000 = gold"
+        },
+        {
+          "id": "gsm8k-test-762",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's final answer 85 is correct",
+          "pred": 85.0,
+          "gold_final": "85",
+          "human_note": "85 = gold"
+        },
+        {
+          "id": "gsm8k-test-880",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 10 == reference answer 10",
+          "pred": 10.0,
+          "gold_final": "10",
+          "human_note": "10 = gold"
+        },
+        {
+          "id": "gsm8k-test-907",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 16 != 45",
+          "pred": 16.0,
+          "gold_final": "16",
+          "human_note": "16 = gold"
+        },
+        {
+          "id": "gsm8k-test-911",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's final answer is 64, which matches the reference answer.",
+          "pred": 64.0,
+          "gold_final": "64",
+          "human_note": "64 = gold"
+        },
+        {
+          "id": "gsm8k-test-941",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's answer is missing or ambiguous",
+          "pred": 842.0,
+          "gold_final": "842",
+          "human_note": "842 = gold"
+        },
+        {
+          "id": "gsm8k-test-1007",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's answer is missing or ambiguous",
+          "pred": 34.0,
+          "gold_final": "34",
+          "human_note": "34 = gold"
+        },
+        {
+          "id": "gsm8k-test-1144",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's answer is missing or ambiguous",
+          "pred": 34.0,
+          "gold_final": "34",
+          "human_note": "34 = gold"
+        },
+        {
+          "id": "gsm8k-test-1168",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "model's final answer 20 matches the reference answer 20",
+          "pred": 20.0,
+          "gold_final": "20",
+          "human_note": "20 = gold"
+        },
+        {
+          "id": "gsm8k-test-1225",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "final answer 3 == reference answer 3",
+          "pred": 3.0,
+          "gold_final": "3",
+          "human_note": "#### 3 = gold"
+        },
+        {
+          "id": "gsm8k-test-1253",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's answer is missing or ambiguous",
+          "pred": 120.0,
+          "gold_final": "120",
+          "human_note": "120 = gold"
+        },
+        {
+          "id": "gsm8k-test-1289",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "Model's answer is missing or ambiguous",
+          "pred": 101.0,
+          "gold_final": "101",
+          "human_note": "101 = gold"
+        }
+      ]
+    },
+    {
+      "n": 60,
+      "po": 0.43333333333333335,
+      "pe": 0.3533333333333334,
+      "kappa": 0.12371134020618552,
+      "confusion": {
+        "both_1": 8,
+        "a1_b0": 0,
+        "a0_b1": 34,
+        "both_0": 18
+      },
+      "ci95": [
+        0.045553145336225564,
+        0.23529411764705876
+      ],
+      "width": 0.1897409723108332,
+      "iterations": 10000,
+      "seed": 20261105,
+      "judge_model": "qwen2.5:3b",
+      "judge_mode": "rubric",
+      "key": "qwen2.5:3b [rubric]",
+      "n_judged": 60,
+      "parse_rate": 0.4,
+      "n_for_halfwidth_005": 216,
+      "latency_ms_mean": 2187.6,
+      "tokens_mean": 650.7,
+      "disagreements": [
+        {
+          "id": "gsm8k-test-24",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is not normalized and does not match the reference answer.",
+          "pred": 26.0,
+          "gold_final": "26",
+          "human_note": "boxed 26 = gold；未用 #### 标记，但最终答案明确"
+        },
+        {
+          "id": "gsm8k-test-55",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's final answer is missing the numeric value.",
+          "pred": 14.0,
+          "gold_final": "14",
+          "human_note": "#### 14 = gold"
+        },
+        {
+          "id": "gsm8k-test-63",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is present but not numerically equal to the reference answer.",
+          "pred": 1596.0,
+          "gold_final": "1596",
+          "human_note": "1596 = gold（美元题，单位不影响数值）"
+        },
+        {
+          "id": "gsm8k-test-132",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is missing the final numeric value.",
+          "pred": 60.0,
+          "gold_final": "60",
+          "human_note": "60 = gold"
+        },
+        {
+          "id": "gsm8k-test-140",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is not equal to the reference answer.",
+          "pred": 20.0,
+          "gold_final": "20",
+          "human_note": "20(%) = gold 20，百分号不影响数值"
+        },
+        {
+          "id": "gsm8k-test-167",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is present but not normalized.",
+          "pred": 16.0,
+          "gold_final": "16",
+          "human_note": "16 = gold"
+        },
+        {
+          "id": "gsm8k-test-178",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is missing the final number, which is required for a complete submission.",
+          "pred": 122.0,
+          "gold_final": "122",
+          "human_note": "122 = gold"
+        },
+        {
+          "id": "gsm8k-test-232",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is missing or ambiguous.",
+          "pred": 75.0,
+          "gold_final": "75",
+          "human_note": "75 = gold"
+        },
+        {
+          "id": "gsm8k-test-241",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is missing the final number.",
+          "pred": 6.0,
+          "gold_final": "6",
+          "human_note": "6 = gold"
+        },
+        {
+          "id": "gsm8k-test-268",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is present but not numerically equal to the reference answer.",
+          "pred": 1375.0,
+          "gold_final": "1375",
+          "human_note": "1375 = gold"
+        },
+        {
+          "id": "gsm8k-test-299",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is missing or ambiguous.",
+          "pred": 31800.0,
+          "gold_final": "31800",
+          "human_note": "31800 = gold"
+        },
+        {
+          "id": "gsm8k-test-321",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is not normalized and does not match the reference answer.",
+          "pred": 1.0,
+          "gold_final": "1",
+          "human_note": "1 = gold"
+        },
+        {
+          "id": "gsm8k-test-343",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is present but not numerically equal to the reference answer.",
+          "pred": 180000.0,
+          "gold_final": "180000",
+          "human_note": "180000 = gold（米）"
+        },
+        {
+          "id": "gsm8k-test-361",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is present but not numerically equal to the reference answer.",
+          "pred": 20.0,
+          "gold_final": "20",
+          "human_note": "#### 20 = gold"
+        },
+        {
+          "id": "gsm8k-test-390",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is missing or ambiguous.",
+          "pred": 12.0,
+          "gold_final": "12",
+          "human_note": "12 = gold"
+        },
+        {
+          "id": "gsm8k-test-396",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is present but not numerically equal to the reference answer.",
+          "pred": 3.0,
+          "gold_final": "3",
+          "human_note": "#### 3 = gold"
+        },
+        {
+          "id": "gsm8k-test-452",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is numerically equal to the reference answer but C4 is false because the answer is not cut off.",
+          "pred": 50.0,
+          "gold_final": "50",
+          "human_note": "50 = gold"
+        },
+        {
+          "id": "gsm8k-test-474",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is present but not numerically equal to the reference answer.",
+          "pred": 80.0,
+          "gold_final": "80",
+          "human_note": "80 = gold"
+        },
+        {
+          "id": "gsm8k-test-503",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is present but not normalized to the reference answer.",
+          "pred": 18.0,
+          "gold_final": "18",
+          "human_note": "18 = gold"
+        },
+        {
+          "id": "gsm8k-test-514",
+          "category": "steps_1_2",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is not normalized and does not match the reference answer.",
+          "pred": 90000.0,
+          "gold_final": "90000",
+          "human_note": "90,000 = gold 90000"
+        },
+        {
+          "id": "gsm8k-test-531",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is not normalized to the reference answer.",
+          "pred": 66.0,
+          "gold_final": "66",
+          "human_note": "66 = gold"
+        },
+        {
+          "id": "gsm8k-test-581",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is present but not normalized to the reference answer.",
+          "pred": 215.0,
+          "gold_final": "215",
+          "human_note": "215 = gold"
+        },
+        {
+          "id": "gsm8k-test-659",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is missing or ambiguous.",
+          "pred": 3.0,
+          "gold_final": "3",
+          "human_note": "3 = gold"
+        },
+        {
+          "id": "gsm8k-test-666",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is not normalized to the reference answer.",
+          "pred": 120.0,
+          "gold_final": "120",
+          "human_note": "120 = gold"
+        },
+        {
+          "id": "gsm8k-test-721",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is present but not numerically equal to the reference answer.",
+          "pred": 2450.0,
+          "gold_final": "2450",
+          "human_note": "2450 = gold"
+        },
+        {
+          "id": "gsm8k-test-729",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is present but not numerically equal to the reference answer.",
+          "pred": 1000.0,
+          "gold_final": "1000",
+          "human_note": "1000 = gold"
+        },
+        {
+          "id": "gsm8k-test-762",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is present but not normalized numerically.",
+          "pred": 85.0,
+          "gold_final": "85",
+          "human_note": "85 = gold"
+        },
+        {
+          "id": "gsm8k-test-880",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is numerically correct but not in the required format.",
+          "pred": 10.0,
+          "gold_final": "10",
+          "human_note": "10 = gold"
+        },
+        {
+          "id": "gsm8k-test-941",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is numerically equal to the reference answer but the reference answer is not in the correct format.",
+          "pred": 842.0,
+          "gold_final": "842",
+          "human_note": "842 = gold"
+        },
+        {
+          "id": "gsm8k-test-1007",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is present but not numerically equal to the reference answer.",
+          "pred": 34.0,
+          "gold_final": "34",
+          "human_note": "34 = gold"
+        },
+        {
+          "id": "gsm8k-test-1168",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's final answer is present but not equal to the reference answer.",
+          "pred": 20.0,
+          "gold_final": "20",
+          "human_note": "20 = gold"
+        },
+        {
+          "id": "gsm8k-test-1225",
+          "category": "steps_5_plus",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is missing but the reference answer is 3.",
+          "pred": 3.0,
+          "gold_final": "3",
+          "human_note": "#### 3 = gold"
+        },
+        {
+          "id": "gsm8k-test-1289",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is present but not numerically equal to the reference answer.",
+          "pred": 101.0,
+          "gold_final": "101",
+          "human_note": "101 = gold"
+        },
+        {
+          "id": "gsm8k-test-1307",
+          "category": "steps_3_4",
+          "human": 1,
+          "judge": 0,
+          "reason": "The model's answer is present but not in the correct format.",
+          "pred": 8.0,
+          "gold_final": "8",
+          "human_note": "8 = gold"
+        }
+      ]
+    }
+  ],
+  "per_category": {
+    "steps_1_2": {
+      "n": 37,
+      "rule_kappa": 0.9335727109515262,
+      "judges": {
+        "qwen2.5:0.5b": 0.10483870967741937,
+        "qwen2.5:1.5b": 0.5934065934065936,
+        "qwen2.5:1.5b [fewshot]": 0.0,
+        "qwen2.5:1.5b [rubric]": 0.19354838709677433,
+        "qwen2.5:3b": 0.7040000000000001,
+        "qwen2.5:3b [fewshot]": 0.09090909090909093,
+        "qwen2.5:3b [rubric]": 0.18604651162790695
+      },
+      "judge_n": {
+        "qwen2.5:0.5b": 37,
+        "qwen2.5:1.5b": 37,
+        "qwen2.5:1.5b [fewshot]": 15,
+        "qwen2.5:1.5b [rubric]": 15,
+        "qwen2.5:3b": 37,
+        "qwen2.5:3b [fewshot]": 15,
+        "qwen2.5:3b [rubric]": 15
+      }
+    },
+    "steps_3_4": {
+      "n": 76,
+      "rule_kappa": 1.0,
+      "judges": {
+        "qwen2.5:0.5b": 0.383916990920882,
+        "qwen2.5:1.5b": 0.5777777777777777,
+        "qwen2.5:1.5b [fewshot]": -7.930164461608261e-17,
+        "qwen2.5:1.5b [rubric]": 0.0,
+        "qwen2.5:3b": 0.8288288288288288,
+        "qwen2.5:3b [fewshot]": 0.15789473684210523,
+        "qwen2.5:3b [rubric]": 0.15789473684210523
+      },
+      "judge_n": {
+        "qwen2.5:0.5b": 76,
+        "qwen2.5:1.5b": 76,
+        "qwen2.5:1.5b [fewshot]": 30,
+        "qwen2.5:1.5b [rubric]": 30,
+        "qwen2.5:3b": 76,
+        "qwen2.5:3b [fewshot]": 30,
+        "qwen2.5:3b [rubric]": 30
+      }
+    },
+    "steps_5_plus": {
+      "n": 37,
+      "rule_kappa": 1.0,
+      "judges": {
+        "qwen2.5:0.5b": 0.3543624161073826,
+        "qwen2.5:1.5b": 0.7999999999999999,
+        "qwen2.5:1.5b [fewshot]": 6.938893903907228e-17,
+        "qwen2.5:1.5b [rubric]": 0.0,
+        "qwen2.5:3b": 0.941732283464567,
+        "qwen2.5:3b [fewshot]": 0.0740740740740741,
+        "qwen2.5:3b [rubric]": 0.035087719298245654
+      },
+      "judge_n": {
+        "qwen2.5:0.5b": 37,
+        "qwen2.5:1.5b": 36,
+        "qwen2.5:1.5b [fewshot]": 15,
+        "qwen2.5:1.5b [rubric]": 15,
+        "qwen2.5:3b": 37,
+        "qwen2.5:3b [fewshot]": 15,
+        "qwen2.5:3b [rubric]": 15
+      }
+    }
+  },
+  "disagreements_rule": [
+    {
+      "id": "gsm8k-test-1163",
+      "human": 1,
+      "rule": 0,
+      "note": "boxed 12 = gold；判分器取到文中 “2 days” 的 2，属提取误差",
+      "pred": 2.0,
+      "gold_final": "12"
+    }
+  ]
+}

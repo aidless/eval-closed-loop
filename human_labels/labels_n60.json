@@ -1,0 +1,302 @@
+[
+  {
+    "id": "gsm8k-test-24",
+    "human": 1,
+    "note": "boxed 26 = gold；未用 #### 标记，但最终答案明确"
+  },
+  {
+    "id": "gsm8k-test-55",
+    "human": 1,
+    "note": "#### 14 = gold"
+  },
+  {
+    "id": "gsm8k-test-63",
+    "human": 1,
+    "note": "1596 = gold（美元题，单位不影响数值）"
+  },
+  {
+    "id": "gsm8k-test-89",
+    "human": 0,
+    "note": "18 vs gold 24，算错"
+  },
+  {
+    "id": "gsm8k-test-102",
+    "human": 0,
+    "note": "28 vs gold 26，算错"
+  },
+  {
+    "id": "gsm8k-test-111",
+    "human": 0,
+    "note": "输出被截断，没有给出最终答案"
+  },
+  {
+    "id": "gsm8k-test-132",
+    "human": 1,
+    "note": "60 = gold"
+  },
+  {
+    "id": "gsm8k-test-140",
+    "human": 1,
+    "note": "20(%) = gold 20，百分号不影响数值"
+  },
+  {
+    "id": "gsm8k-test-143",
+    "human": 0,
+    "note": "23.10 vs gold 16，算错"
+  },
+  {
+    "id": "gsm8k-test-159",
+    "human": 0,
+    "note": "7 vs gold 15，算错"
+  },
+  {
+    "id": "gsm8k-test-167",
+    "human": 1,
+    "note": "16 = gold"
+  },
+  {
+    "id": "gsm8k-test-178",
+    "human": 1,
+    "note": "122 = gold"
+  },
+  {
+    "id": "gsm8k-test-232",
+    "human": 1,
+    "note": "75 = gold"
+  },
+  {
+    "id": "gsm8k-test-241",
+    "human": 1,
+    "note": "6 = gold"
+  },
+  {
+    "id": "gsm8k-test-264",
+    "human": 1,
+    "note": "400 = gold"
+  },
+  {
+    "id": "gsm8k-test-268",
+    "human": 1,
+    "note": "1375 = gold"
+  },
+  {
+    "id": "gsm8k-test-293",
+    "human": 0,
+    "note": "81 vs gold 83，算错"
+  },
+  {
+    "id": "gsm8k-test-297",
+    "human": 0,
+    "note": "25 vs gold 55，题目理解错（问的是比目标少多少 vs 目标 55）"
+  },
+  {
+    "id": "gsm8k-test-298",
+    "human": 0,
+    "note": "750 vs gold 500，算错"
+  },
+  {
+    "id": "gsm8k-test-299",
+    "human": 1,
+    "note": "31800 = gold"
+  },
+  {
+    "id": "gsm8k-test-316",
+    "human": 0,
+    "note": "56 vs gold 156，算错"
+  },
+  {
+    "id": "gsm8k-test-321",
+    "human": 1,
+    "note": "1 = gold"
+  },
+  {
+    "id": "gsm8k-test-338",
+    "human": 0,
+    "note": "63.33 vs gold 60，除不尽后没有回到整数解"
+  },
+  {
+    "id": "gsm8k-test-343",
+    "human": 1,
+    "note": "180000 = gold（米）"
+  },
+  {
+    "id": "gsm8k-test-361",
+    "human": 1,
+    "note": "#### 20 = gold"
+  },
+  {
+    "id": "gsm8k-test-390",
+    "human": 1,
+    "note": "12 = gold"
+  },
+  {
+    "id": "gsm8k-test-396",
+    "human": 1,
+    "note": "#### 3 = gold"
+  },
+  {
+    "id": "gsm8k-test-452",
+    "human": 1,
+    "note": "50 = gold"
+  },
+  {
+    "id": "gsm8k-test-474",
+    "human": 1,
+    "note": "80 = gold"
+  },
+  {
+    "id": "gsm8k-test-503",
+    "human": 1,
+    "note": "18 = gold"
+  },
+  {
+    "id": "gsm8k-test-514",
+    "human": 1,
+    "note": "90,000 = gold 90000"
+  },
+  {
+    "id": "gsm8k-test-531",
+    "human": 1,
+    "note": "66 = gold"
+  },
+  {
+    "id": "gsm8k-test-551",
+    "human": 1,
+    "note": "17 = gold"
+  },
+  {
+    "id": "gsm8k-test-581",
+    "human": 1,
+    "note": "215 = gold"
+  },
+  {
+    "id": "gsm8k-test-590",
+    "human": 0,
+    "note": "310 vs gold 319，算错"
+  },
+  {
+    "id": "gsm8k-test-659",
+    "human": 1,
+    "note": "3 = gold"
+  },
+  {
+    "id": "gsm8k-test-666",
+    "human": 1,
+    "note": "120 = gold"
+  },
+  {
+    "id": "gsm8k-test-721",
+    "human": 1,
+    "note": "2450 = gold"
+  },
+  {
+    "id": "gsm8k-test-722",
+    "human": 0,
+    "note": "645 vs gold 255，算错"
+  },
+  {
+    "id": "gsm8k-test-729",
+    "human": 1,
+    "note": "1000 = gold"
+  },
+  {
+    "id": "gsm8k-test-762",
+    "human": 1,
+    "note": "85 = gold"
+  },
+  {
+    "id": "gsm8k-test-763",
+    "human": 0,
+    "note": "166.67 vs gold 100；规则抽取把 \\overline{6} 取成 6，但二值判定仍为错"
+  },
+  {
+    "id": "gsm8k-test-782",
+    "human": 0,
+    "note": "27 vs gold 54，算错"
+  },
+  {
+    "id": "gsm8k-test-796",
+    "human": 0,
+    "note": "104000 vs gold 2880000，算错"
+  },
+  {
+    "id": "gsm8k-test-880",
+    "human": 1,
+    "note": "10 = gold"
+  },
+  {
+    "id": "gsm8k-test-907",
+    "human": 1,
+    "note": "16 = gold"
+  },
+  {
+    "id": "gsm8k-test-911",
+    "human": 1,
+    "note": "64 = gold"
+  },
+  {
+    "id": "gsm8k-test-941",
+    "human": 1,
+    "note": "842 = gold"
+  },
+  {
+    "id": "gsm8k-test-946",
+    "human": 1,
+    "note": "450 = gold"
+  },
+  {
+    "id": "gsm8k-test-997",
+    "human": 0,
+    "note": "6200 vs gold 6，算错"
+  },
+  {
+    "id": "gsm8k-test-1007",
+    "human": 1,
+    "note": "34 = gold"
+  },
+  {
+    "id": "gsm8k-test-1063",
+    "human": 1,
+    "note": "320 = gold"
+  },
+  {
+    "id": "gsm8k-test-1144",
+    "human": 1,
+    "note": "34 = gold"
+  },
+  {
+    "id": "gsm8k-test-1168",
+    "human": 1,
+    "note": "20 = gold"
+  },
+  {
+    "id": "gsm8k-test-1201",
+    "human": 0,
+    "note": "44 vs gold 42，算错"
+  },
+  {
+    "id": "gsm8k-test-1225",
+    "human": 1,
+    "note": "#### 3 = gold"
+  },
+  {
+    "id": "gsm8k-test-1253",
+    "human": 1,
+    "note": "120 = gold"
+  },
+  {
+    "id": "gsm8k-test-1284",
+    "human": 0,
+    "note": "35 vs gold 25，算错"
+  },
+  {
+    "id": "gsm8k-test-1289",
+    "human": 1,
+    "note": "101 = gold"
+  },
+  {
+    "id": "gsm8k-test-1307",
+    "human": 1,
+    "note": "8 = gold"
+  }
+]

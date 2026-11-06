@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eval-loop"
+version = "0.1.0"
+description = "可复现的 LLM 评测闭环：跑分 + 置信区间 + 回归门禁 + judge κ"
+requires-python = ">=3.10"
+dependencies = []          # 运行时只用标准库；跑分依赖本地 ollama
+
+[project.optional-dependencies]
+dev = ["pytest"]
+freeze = ["datasets"]      # 只有 scripts/freeze_data.py 需要
+
+[project.scripts]
+eval-loop = "eval_loop.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,18 @@
+{
+  "n": 60,
+  "rule": {
+    "n": 60,
+    "po": 1.0,
+    "pe": 0.58,
+    "kappa": 1.0,
+    "confusion": {
+      "both_1": 42,
+      "a1_b0": 0,
+      "a0_b1": 0,
+      "both_0": 18
+    }
+  },
+  "judges": [],
+  "per_category": {},
+  "disagreements_rule": []
+}

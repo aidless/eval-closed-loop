@@ -1,0 +1,150 @@
+{"id": "gsm8k-test-24", "human": 1, "note": "boxed 26 = gold；未用 #### 标记，但最终答案明确"}
+{"id": "gsm8k-test-55", "human": 1, "note": "#### 14 = gold"}
+{"id": "gsm8k-test-63", "human": 1, "note": "1596 = gold（美元题，单位不影响数值）"}
+{"id": "gsm8k-test-89", "human": 0, "note": "18 vs gold 24，算错"}
+{"id": "gsm8k-test-102", "human": 0, "note": "28 vs gold 26，算错"}
+{"id": "gsm8k-test-111", "human": 0, "note": "输出被截断，没有给出最终答案"}
+{"id": "gsm8k-test-132", "human": 1, "note": "60 = gold"}
+{"id": "gsm8k-test-140", "human": 1, "note": "20(%) = gold 20，百分号不影响数值"}
+{"id": "gsm8k-test-143", "human": 0, "note": "23.10 vs gold 16，算错"}
+{"id": "gsm8k-test-159", "human": 0, "note": "7 vs gold 15，算错"}
+{"id": "gsm8k-test-167", "human": 1, "note": "16 = gold"}
+{"id": "gsm8k-test-178", "human": 1, "note": "122 = gold"}
+{"id": "gsm8k-test-232", "human": 1, "note": "75 = gold"}
+{"id": "gsm8k-test-241", "human": 1, "note": "6 = gold"}
+{"id": "gsm8k-test-264", "human": 1, "note": "400 = gold"}
+{"id": "gsm8k-test-268", "human": 1, "note": "1375 = gold"}
+{"id": "gsm8k-test-293", "human": 0, "note": "81 vs gold 83，算错"}
+{"id": "gsm8k-test-297", "human": 0, "note": "25 vs gold 55，题目理解错（问的是比目标少多少 vs 目标 55）"}
+{"id": "gsm8k-test-298", "human": 0, "note": "750 vs gold 500，算错"}
+{"id": "gsm8k-test-299", "human": 1, "note": "31800 = gold"}
+{"id": "gsm8k-test-316", "human": 0, "note": "56 vs gold 156，算错"}
+{"id": "gsm8k-test-321", "human": 1, "note": "1 = gold"}
+{"id": "gsm8k-test-338", "human": 0, "note": "63.33 vs gold 60，除不尽后没有回到整数解"}
+{"id": "gsm8k-test-343", "human": 1, "note": "180000 = gold（米）"}
+{"id": "gsm8k-test-361", "human": 1, "note": "#### 20 = gold"}
+{"id": "gsm8k-test-390", "human": 1, "note": "12 = gold"}
+{"id": "gsm8k-test-396", "human": 1, "note": "#### 3 = gold"}
+{"id": "gsm8k-test-452", "human": 1, "note": "50 = gold"}
+{"id": "gsm8k-test-474", "human": 1, "note": "80 = gold"}
+{"id": "gsm8k-test-503", "human": 1, "note": "18 = gold"}
+{"id": "gsm8k-test-514", "human": 1, "note": "90,000 = gold 90000"}
+{"id": "gsm8k-test-531", "human": 1, "note": "66 = gold"}
+{"id": "gsm8k-test-551", "human": 1, "note": "17 = gold"}
+{"id": "gsm8k-test-581", "human": 1, "note": "215 = gold"}
+{"id": "gsm8k-test-590", "human": 0, "note": "310 vs gold 319，算错"}
+{"id": "gsm8k-test-659", "human": 1, "note": "3 = gold"}
+{"id": "gsm8k-test-666", "human": 1, "note": "120 = gold"}
+{"id": "gsm8k-test-721", "human": 1, "note": "2450 = gold"}
+{"id": "gsm8k-test-722", "human": 0, "note": "645 vs gold 255，算错"}
+{"id": "gsm8k-test-729", "human": 1, "note": "1000 = gold"}
+{"id": "gsm8k-test-762", "human": 1, "note": "85 = gold"}
+{"id": "gsm8k-test-763", "human": 0, "note": "166.67 vs gold 100；规则抽取把 \\overline{6} 取成 6，但二值判定仍为错"}
+{"id": "gsm8k-test-782", "human": 0, "note": "27 vs gold 54，算错"}
+{"id": "gsm8k-test-796", "human": 0, "note": "104000 vs gold 2880000，算错"}
+{"id": "gsm8k-test-880", "human": 1, "note": "10 = gold"}
+{"id": "gsm8k-test-907", "human": 1, "note": "16 = gold"}
+{"id": "gsm8k-test-911", "human": 1, "note": "64 = gold"}
+{"id": "gsm8k-test-941", "human": 1, "note": "842 = gold"}
+{"id": "gsm8k-test-946", "human": 1, "note": "450 = gold"}
+{"id": "gsm8k-test-997", "human": 0, "note": "6200 vs gold 6，算错"}
+{"id": "gsm8k-test-1007", "human": 1, "note": "34 = gold"}
+{"id": "gsm8k-test-1063", "human": 1, "note": "320 = gold"}
+{"id": "gsm8k-test-1144", "human": 1, "note": "34 = gold"}
+{"id": "gsm8k-test-1168", "human": 1, "note": "20 = gold"}
+{"id": "gsm8k-test-1201", "human": 0, "note": "44 vs gold 42，算错"}
+{"id": "gsm8k-test-1225", "human": 1, "note": "#### 3 = gold"}
+{"id": "gsm8k-test-1253", "human": 1, "note": "120 = gold"}
+{"id": "gsm8k-test-1284", "human": 0, "note": "35 vs gold 25，算错"}
+{"id": "gsm8k-test-1289", "human": 1, "note": "101 = gold"}
+{"id": "gsm8k-test-1307", "human": 1, "note": "8 = gold"}
+{"id": "gsm8k-test-103", "human": 1, "note": "boxed 140 = gold"}
+{"id": "gsm8k-test-1036", "human": 1, "note": "boxed 10 = gold"}
+{"id": "gsm8k-test-1150", "human": 1, "note": "末尾 21 = gold"}
+{"id": "gsm8k-test-1163", "human": 1, "note": "boxed 12 = gold；判分器取到文中 “2 days” 的 2，属提取误差"}
+{"id": "gsm8k-test-1257", "human": 1, "note": "boxed 14 = gold"}
+{"id": "gsm8k-test-126", "human": 1, "note": "boxed 82 = gold"}
+{"id": "gsm8k-test-149", "human": 1, "note": "boxed 16 = gold"}
+{"id": "gsm8k-test-180", "human": 1, "note": "boxed 20 = gold"}
+{"id": "gsm8k-test-181", "human": 1, "note": "boxed 160 = gold"}
+{"id": "gsm8k-test-215", "human": 1, "note": "#### 44 = gold"}
+{"id": "gsm8k-test-253", "human": 1, "note": "#### 18 = gold"}
+{"id": "gsm8k-test-324", "human": 0, "note": "最终 7，金标 14：把 “1 new per 2 old” 当成了除法"}
+{"id": "gsm8k-test-48", "human": 1, "note": "boxed 8 = gold"}
+{"id": "gsm8k-test-491", "human": 1, "note": "boxed 16 = gold"}
+{"id": "gsm8k-test-569", "human": 1, "note": "boxed 21 = gold"}
+{"id": "gsm8k-test-628", "human": 0, "note": "向上取整得 5，金标 4：不应取整"}
+{"id": "gsm8k-test-639", "human": 0, "note": "给 3.6 分钟，金标 216 秒：单位口径不符"}
+{"id": "gsm8k-test-761", "human": 0, "note": "用 18×2=36，金标 27：三分之二关系用反"}
+{"id": "gsm8k-test-83", "human": 1, "note": "#### 600 = gold"}
+{"id": "gsm8k-test-842", "human": 1, "note": "boxed 10 = gold"}
+{"id": "gsm8k-test-867", "human": 1, "note": "boxed 7 = gold"}
+{"id": "gsm8k-test-883", "human": 1, "note": "boxed 25 = gold"}
+{"id": "gsm8k-test-1048", "human": 0, "note": "9877.80 ≠ 7400：折旧系数算错"}
+{"id": "gsm8k-test-1119", "human": 1, "note": "boxed 18 = gold"}
+{"id": "gsm8k-test-1120", "human": 0, "note": "16800 ≠ 560：分钟当小时乘"}
+{"id": "gsm8k-test-1154", "human": 1, "note": "boxed 30 = gold"}
+{"id": "gsm8k-test-1192", "human": 1, "note": "末尾 $280.00 = gold"}
+{"id": "gsm8k-test-1202", "human": 0, "note": "26−9=17，金标 19：减错已用色数"}
+{"id": "gsm8k-test-1205", "human": 1, "note": "boxed 4 = gold"}
+{"id": "gsm8k-test-1256", "human": 1, "note": "末尾 15 分钟 = gold"}
+{"id": "gsm8k-test-1309", "human": 0, "note": "750+430+700=1980，金标 2280：漏/加错一项"}
+{"id": "gsm8k-test-162", "human": 0, "note": "207.63 ≠ 92：复利算错"}
+{"id": "gsm8k-test-203", "human": 1, "note": "boxed 31 = gold"}
+{"id": "gsm8k-test-254", "human": 1, "note": "#### 84 = gold"}
+{"id": "gsm8k-test-291", "human": 1, "note": "boxed 2 = gold"}
+{"id": "gsm8k-test-296", "human": 0, "note": "6 周，金标 3 周：未扣已吃部分"}
+{"id": "gsm8k-test-309", "human": 1, "note": "boxed 8 = gold"}
+{"id": "gsm8k-test-318", "human": 1, "note": "boxed 123 = gold"}
+{"id": "gsm8k-test-35", "human": 1, "note": "boxed 9 = gold"}
+{"id": "gsm8k-test-357", "human": 0, "note": "14，金标 2：把 70 全当可用金额"}
+{"id": "gsm8k-test-380", "human": 0, "note": "3820.01 ≠ 803：贷款总额算错"}
+{"id": "gsm8k-test-381", "human": 1, "note": "#### 67 = gold"}
+{"id": "gsm8k-test-427", "human": 0, "note": "输出退化重复，未给出有效最终答案"}
+{"id": "gsm8k-test-451", "human": 1, "note": "boxed 11050 = gold"}
+{"id": "gsm8k-test-493", "human": 0, "note": "350 美分，金标 25 美分：换算/折扣算错"}
+{"id": "gsm8k-test-539", "human": 0, "note": "60，金标 35：折扣方向算反"}
+{"id": "gsm8k-test-547", "human": 1, "note": "boxed 81 = gold"}
+{"id": "gsm8k-test-561", "human": 1, "note": "末尾 180 磅 = gold"}
+{"id": "gsm8k-test-631", "human": 1, "note": "boxed 4800 = gold"}
+{"id": "gsm8k-test-644", "human": 1, "note": "#### 29 = gold"}
+{"id": "gsm8k-test-654", "human": 1, "note": "末尾 2 打 = gold"}
+{"id": "gsm8k-test-671", "human": 1, "note": "boxed 4 = gold"}
+{"id": "gsm8k-test-716", "human": 1, "note": "boxed 770 = gold"}
+{"id": "gsm8k-test-728", "human": 1, "note": "boxed 40 = gold"}
+{"id": "gsm8k-test-760", "human": 1, "note": "boxed 16 = gold"}
+{"id": "gsm8k-test-768", "human": 0, "note": "600，金标 675：少算 75 本"}
+{"id": "gsm8k-test-77", "human": 1, "note": "boxed 100 = gold"}
+{"id": "gsm8k-test-833", "human": 1, "note": "#### 40 = gold"}
+{"id": "gsm8k-test-841", "human": 1, "note": "末尾 $5600 = gold"}
+{"id": "gsm8k-test-846", "human": 0, "note": "6 组，金标 11：用 120 分钟除错基数"}
+{"id": "gsm8k-test-856", "human": 1, "note": "boxed 7 = gold（末段 2 余数为中间量）"}
+{"id": "gsm8k-test-87", "human": 0, "note": "960，金标 9360：只算了第 6 年的增量"}
+{"id": "gsm8k-test-88", "human": 1, "note": "#### 8000 = gold"}
+{"id": "gsm8k-test-895", "human": 1, "note": "boxed 74 = gold"}
+{"id": "gsm8k-test-913", "human": 1, "note": "boxed 6 = gold"}
+{"id": "gsm8k-test-921", "human": 1, "note": "boxed 4 = gold"}
+{"id": "gsm8k-test-952", "human": 0, "note": "480，金标 360：时间区间数算错"}
+{"id": "gsm8k-test-959", "human": 1, "note": "boxed 7 = gold"}
+{"id": "gsm8k-test-1011", "human": 1, "note": "boxed 6000 = gold"}
+{"id": "gsm8k-test-1045", "human": 1, "note": "boxed 420 = gold"}
+{"id": "gsm8k-test-1129", "human": 0, "note": "3，金标 8：代数解错"}
+{"id": "gsm8k-test-119", "human": 0, "note": "99077.91 ≠ 95200：增长率算错"}
+{"id": "gsm8k-test-1233", "human": 1, "note": "boxed 81 = gold"}
+{"id": "gsm8k-test-1240", "human": 0, "note": "6，金标 2：取整前算错"}
+{"id": "gsm8k-test-199", "human": 0, "note": "15000 美分，金标 7500：翻倍"}
+{"id": "gsm8k-test-279", "human": 1, "note": "boxed 6 = gold"}
+{"id": "gsm8k-test-311", "human": 1, "note": "boxed 91 = gold"}
+{"id": "gsm8k-test-353", "human": 0, "note": "6 小时，金标 20：40% 用错基数"}
+{"id": "gsm8k-test-356", "human": 1, "note": "末尾 $21 = gold"}
+{"id": "gsm8k-test-422", "human": 0, "note": "128，金标 284：漏算一段费用"}
+{"id": "gsm8k-test-550", "human": 1, "note": "boxed 27 = gold"}
+{"id": "gsm8k-test-578", "human": 1, "note": "#### 48 = gold"}
+{"id": "gsm8k-test-587", "human": 1, "note": "末尾 30 = gold"}
+{"id": "gsm8k-test-601", "human": 0, "note": "51，金标 104：三年都按 17 算"}
+{"id": "gsm8k-test-772", "human": 1, "note": "#### 50 = gold"}
+{"id": "gsm8k-test-84", "human": 1, "note": "boxed 15 = gold"}
+{"id": "gsm8k-test-938", "human": 1, "note": "#### 4 = gold"}
+{"id": "gsm8k-test-955", "human": 0, "note": "300，金标 100：占用/未占用搞反"}
+{"id": "gsm8k-test-969", "human": 0, "note": "1050，金标 1800：等比求和算错"}
+{"id": "gsm8k-test-999", "human": 0, "note": "40%，金标 25：比例算错"}
