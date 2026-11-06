@@ -193,6 +193,8 @@ make cost-cpu CPU_LIMIT=100  # CPU 抽样实测，只报抽样、不外推
 make smoke         # 8 题最小闭环自检
 ```
 
+注：`make repro N=300 / N=1319` 与 `make stability N=1319` 的**完整串行生成未在此环境完整执行**（需 ollama 端点，约 35 / 112 分钟）；只验证了入口存在、`make -n` 可解析，其余秒级重算档（`make test` / `gate` / `verify` / `curve`）已实跑。
+
 N≠60 时产物带后缀：`results/runs/*_n300.jsonl` / `*_n1319.jsonl`、`reports/gate_n300.json` / `gate_n1319.json`；
 报告与 `summary.json` 始终覆盖为最新一轮（当前为全量档）。
 
