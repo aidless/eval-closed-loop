@@ -15,7 +15,7 @@ from collections.abc import Iterable, Mapping
 
 
 def _eval_gate_stats():
-    path = os.environ.get("EC_EVAL_GATE_PATH", "../eval-gate")
+    path = os.path.expanduser(os.environ.get("EC_EVAL_GATE_PATH", "~/eval-gate"))
     if path not in sys.path:
         sys.path.insert(0, path)
     try:
@@ -27,8 +27,8 @@ def _eval_gate_stats():
     except ImportError as exc:  # 复用失败就明确失败，不悄悄替换成另一套统计
         raise SystemExit(
             "无法导入 eval-gate。请先 clone 判决层仓库并设置 EC_EVAL_GATE_PATH：\n"
-            "  git clone https://github.com/aidless/eval-gate /tmp/eval-gate\n"
-            "  export EC_EVAL_GATE_PATH=/tmp/eval-gate\n"
+            "  git clone https://github.com/aidless/eval-gate ~/eval-gate\n"
+            "  export EC_EVAL_GATE_PATH=~/eval-gate\n"
             f"原始错误: {exc}"
         )
     return wilson_interval, paired_bootstrap_delta, ci_width

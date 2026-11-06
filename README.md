@@ -177,7 +177,8 @@ ollama pull qwen2.5:1.5b
 ollama pull qwen2.5:0.5b
 ollama pull qwen2.5:3b
 
-# 复用统计层：指向本机已有 eval-gate 仓库
+# 复用统计层：先 clone 判决层仓库（不 clone 时 make test / gate / verify 会直接失败）
+git clone https://github.com/aidless/eval-gate ~/eval-gate
 export EC_EVAL_GATE_PATH=~/eval-gate
 
 make test          # 单测

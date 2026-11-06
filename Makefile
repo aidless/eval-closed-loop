@@ -1,6 +1,6 @@
 PY ?= python3
 export PYTHONPATH := src
-export EC_EVAL_GATE_PATH ?= ../eval-gate
+export EC_EVAL_GATE_PATH ?= $(HOME)/eval-gate
 
 RUNS := results/runs
 N ?= 60
