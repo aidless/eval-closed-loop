@@ -35,5 +35,18 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -e ".[dev]"
 
+      # src/eval_loop/stats.py imports eval_gate from a sibling checkout instead
+      # of vendoring the statistics (it raises SystemExit when the module is
+      # missing). Pinned to a commit so a change over there cannot turn this
+      # repo red without a deliberate bump here.
+      - name: Check out eval-gate (statistics dependency)
+        uses: actions/checkout@v4
+        with:
+          repository: aidless/eval-gate
+          ref: 9e0e629e6c4f968c7114f1efa05b4084a172037f
+          path: _eval_gate
+
       - name: Run tests
+        env:
+          EC_EVAL_GATE_PATH: ${{ github.workspace }}/_eval_gate
         run: python -m pytest tests -q
