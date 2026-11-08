@@ -15,7 +15,9 @@ from collections.abc import Iterable, Mapping
 
 
 def _eval_gate_stats():
-    path = os.path.expanduser(os.environ.get("EC_EVAL_GATE_PATH", "~/eval-gate"))
+    default_path = "~/eval-gate"
+    configured = os.environ.get("EC_EVAL_GATE_PATH")
+    path = os.path.expanduser(configured or default_path)
     if path not in sys.path:
         sys.path.insert(0, path)
     try:
@@ -25,12 +27,15 @@ def _eval_gate_stats():
             wilson_interval,
         )
     except ImportError as exc:  # 复用失败就明确失败，不悄悄替换成另一套统计
-        raise SystemExit(
-            "无法导入 eval-gate。请先 clone 判决层仓库并设置 EC_EVAL_GATE_PATH：\n"
-            "  git clone https://github.com/aidless/eval-gate ~/eval-gate\n"
-            "  export EC_EVAL_GATE_PATH=~/eval-gate\n"
+        source = "EC_EVAL_GATE_PATH" if configured else f"默认值 {default_path}，可用 EC_EVAL_GATE_PATH 覆盖"
+        raise ImportError(
+            "缺少模块 eval_gate.stats（统计层直接复用判决层仓库，不随本仓库一起分发）。\n"
+            f"查找路径: {path}（来源: {source}）\n"
+            "修复方式:\n"
+            f"  git clone https://github.com/aidless/eval-gate {default_path}\n"
+            f"  export EC_EVAL_GATE_PATH={default_path}\n"
             f"原始错误: {exc}"
-        )
+        ) from exc
     return wilson_interval, paired_bootstrap_delta, ci_width
 
 

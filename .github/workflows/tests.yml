@@ -36,9 +36,9 @@ jobs:
           python -m pip install -e ".[dev]"
 
       # src/eval_loop/stats.py imports eval_gate from a sibling checkout instead
-      # of vendoring the statistics (it raises SystemExit when the module is
-      # missing). Pinned to a commit so a change over there cannot turn this
-      # repo red without a deliberate bump here.
+      # of vendoring the statistics (it raises ImportError with setup
+      # instructions when the module is missing). Pinned to a commit so a change
+      # over there cannot turn this repo red without a deliberate bump here.
       - name: Check out eval-gate (statistics dependency)
         uses: actions/checkout@v4
         with:
