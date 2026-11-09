@@ -1,5 +1,7 @@
 # eval-closed-loop
 
+[![CI](https://github.com/aidless/eval-closed-loop/actions/workflows/tests.yml/badge.svg)](https://github.com/aidless/eval-closed-loop/actions/workflows/tests.yml)
+
 把「跑一次公开 benchmark」变成一条**可复现、带置信区间、能阻断、能归因**的评测闭环：
 
 ```
