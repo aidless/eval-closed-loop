@@ -21,7 +21,7 @@ jobs:
         python-version: ["3.10", "3.12"]
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v5
@@ -40,7 +40,7 @@ jobs:
       # instructions when the module is missing). Pinned to a commit so a change
       # over there cannot turn this repo red without a deliberate bump here.
       - name: Check out eval-gate (statistics dependency)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: aidless/eval-gate
           ref: 9e0e629e6c4f968c7114f1efa05b4084a172037f
